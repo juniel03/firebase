@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FullScreen">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="15sp"
+        android:background="#80000000"
+        android:id="@+id/tv_fullscreen"
+        android:textColor="@android:color/white"
+
+        />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/exoplayer_item_fullscreen"
+        android:layout_margin="3dp"
+        app:use_controller="true"
+        app:resize_mode="fill">
+
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

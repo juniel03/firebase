@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <VideoView
+        android:id="@+id/etVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/etVideoname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Video Name"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvChooseVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose video"
+        android:clickable="true"
+        android:onClick="chooseVideo"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvShowVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Video"
+        android:clickable="true"
+        android:onClick="showVideo"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
